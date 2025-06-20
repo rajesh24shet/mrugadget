@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002b45;
+  padding: 20px 40px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f0f5f9;
+  padding: 60px 20px;
+  gap: 30px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.feature {
+  flex: 1 1 250px;
+  background: #e6f2ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-gallery {
+  background: #fafafa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px;
+  max-width: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #007BFF;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+footer {
+  background: #002b45;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
